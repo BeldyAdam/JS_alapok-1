@@ -1,15 +1,24 @@
-window.addEventListener("load", function () {
-    elemekElerese1();
-    elemekElerese2();
-    elemekElerese3();
-});
+/* Első feladat */
+const ELSO = $("section #f1")
+console.log(ELSO.html())
 
-function elemekElerese1() {
-    /**Ide jön az első feladat */
+/* Második feladat */
+
+const MASODIK = $("#ide")
+MASODIK.text("Jó reggelt!")
+
+/* Harmadik feladat */
+
+const HARMADIK = $(".ide")
+HARMADIK.text("Jó reggelt!")
+
+/* Negyedik feladat */
+
+
+const NEGYEDIK = $(".lista")
+NEGYEDIK.append("<ul>")
+for (let index = 0; index < 5; index++) {
+    let vSzam = Math.floor(Math.random() * 30) +10;
+    NEGYEDIK.append(`<li>${vSzam}</li>`)
 }
-function elemekElerese2() {
-    /**Ide jön az 2.  feladat */
-}
-function elemekElerese3() {
-    /**Ide jön az 3. feladat */
-}
+NEGYEDIK.append("</ul>")
